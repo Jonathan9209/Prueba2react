@@ -5,12 +5,12 @@ import Img from "../components/atoms/img/img";
 import "./Card.scss";
 
 interface CardProps{
-    url:string
+    img:string
 }
 
-const Card:FC<CardProps> = ({url}) =>{
+const Card:FC<CardProps> = ({img}) =>{
     return <div className="Card">
-        <Img url={url}/>
+        <Img url={img}/>
         <Button text="Eliminar" children/>
     </div>
 }
