@@ -9,6 +9,7 @@ function App() {
 
   return (
     <>
+    <h1>Gif Galery</h1>
     <Input/>
     <Button/>
     </>
