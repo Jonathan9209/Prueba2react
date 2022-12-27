@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.scss';
 import Button from './components/atoms/button/button';
 import Input from './components/atoms/input/input';
+import Img from './components/atoms/img/img';
 
 function App() {
   const [count, setCount] = useState(0)

@@ -1,13 +1,18 @@
+import { FC } from "react";
 import "./button.scss";
 
-
-const Button = () => {
-
-    return (
-        
-        <button className="button">Agregar</button>
-
-    )
+interface ButtonProps {
+  children: React.ReactNode;
+  text: string;
 }
+
+const Button: FC<ButtonProps> = ({ children, text = "Agregar" }) => {
+  return (
+    <button className="button">
+      <label>{children}</label>
+      {text}
+    </button>
+  );
+};
 
 export default Button;
